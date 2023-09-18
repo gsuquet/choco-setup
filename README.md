@@ -2,11 +2,50 @@
 My chocolatey install list.
 
 ## Basic setup
-```
-choco install -y chocolateygui brave wiztree wireguard logioptionsplus slack notion spotify bitwarden
-```
+- chocolateygui
+- brave
+- wiztree
+- slack
+- spotify
+- notion
+- wireguard
+- logioptionsplus
+- bitwarden
 
-## Dev setup
-```
-choco install -y vscode git gh act-cli dbeaver awscli postman golang bitwarden-cli
-```
+## Git
+- git
+  
+### GitHub
+- gh
+- act-cli
+
+## Cloud
+### AWS
+- awscli
+- aws-iam-authenticator
+- eksctl
+
+## Ops
+### Kube
+- kubernetes-cli
+- k9s
+
+### Terraform
+- terraform
+- terragrunt
+- tflint
+
+## Dev
+### Tools
+- vscode
+- postman
+- bitwarden-cli
+- dbeaver
+  
+### JS
+- nodejs-lts
+- pnpm
+- yarn
+
+### Go
+-golang
