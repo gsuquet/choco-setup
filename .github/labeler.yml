@@ -1,0 +1,32 @@
+# PR labeler configuration file
+ci:
+  - any: ['.github/**/*', '!.github/ISSUE_TEMPLATE/*', '!.github/pull_request_template.md']
+  - .pre-commit-config.yaml
+  - .pre-commit-config/**/*
+
+gitignore:
+  - .gitignore
+
+github_actions:
+  - any: ['.github/**/*', '!.github/ISSUE_TEMPLATE/*', '!.github/pull_request_template.md']
+
+documentation:
+  - CHANGELOG.md
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - SECURITY.md
+  - .github/ISSUE_TEMPLATE/**/*
+  - .github/pull_request_template.md
+  - '**/README.md'
+
+configuration:
+  - .pre-commit-config.yaml
+  - .editorconfig
+  - .devcontainer/**/*
+
+packages:
+  - packages/**/*
+
+scripts:
+  - '*.ps1'
