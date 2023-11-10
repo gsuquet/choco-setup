@@ -1,0 +1,6 @@
+chocolateygui
+wiztree
+logioptionsplus
+bitwarden
+wireguard
+obsidian

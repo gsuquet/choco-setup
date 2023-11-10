@@ -1,0 +1,4 @@
+bitwarden-cli
+vscode
+dbeaver
+bruno

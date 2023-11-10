@@ -1,0 +1,6 @@
+docker-engine
+docker-desktop
+docker-compose
+kubernetes-cli
+kubernetes-helm
+k9s
