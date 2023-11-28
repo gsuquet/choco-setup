@@ -11,7 +11,6 @@ install-choco.ps1
 install-packages.ps1
 ```
 ### List
-
 | File | Package Name |
 | --- | --- |
 | `aws` | [awscli](https://community.chocolatey.org/packages/awscli) |
@@ -24,7 +23,7 @@ install-packages.ps1
 | `containers` | [k9s](https://community.chocolatey.org/packages/k9s) |
 | `git` | [git](https://community.chocolatey.org/packages/git) |
 | `git` | [gh](https://community.chocolatey.org/packages/gh) |
-|``media` | [spotify](https://community.chocolatey.org/packages/spotify) |
+| `media` | [spotify](https://community.chocolatey.org/packages/spotify) |
 | `social` | [slack](https://community.chocolatey.org/packages/slack) |
 | `terraform` | [terraform](https://community.chocolatey.org/packages/terraform) |
 | `terraform` | [terragrunt](https://community.chocolatey.org/packages/terragrunt) |
@@ -42,3 +41,5 @@ install-packages.ps1
 | `tools` | [obsidian](https://community.chocolatey.org/packages/obsidian) |
 | `web` | [brave](https://community.chocolatey.org/packages/brave) |
 | `web` | [firefox](https://community.chocolatey.org/packages/firefox) |
+
+
