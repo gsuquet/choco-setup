@@ -24,7 +24,7 @@ install-packages.ps1
 | `containers` | [k9s](https://community.chocolatey.org/packages/k9s) |
 | `git` | [git](https://community.chocolatey.org/packages/git) |
 | `git` | [gh](https://community.chocolatey.org/packages/gh) |
-|``media` | [spotify](https://community.chocolatey.org/packages/spotify) |
+| `media` | [spotify](https://community.chocolatey.org/packages/spotify) |
 | `social` | [slack](https://community.chocolatey.org/packages/slack) |
 | `terraform` | [terraform](https://community.chocolatey.org/packages/terraform) |
 | `terraform` | [terragrunt](https://community.chocolatey.org/packages/terragrunt) |
