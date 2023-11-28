@@ -28,7 +28,7 @@ for file in $packageDir/*.txt; do
 done
 
 # Combine the README parts and the new table
-newReadme="$readmePart1### List\n$table$readmePart2"
+newReadme="$readmePart1### List\n$table\n"
 
 # Write the new content to the README file
 echo -e "$newReadme" > README.md
