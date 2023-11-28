@@ -2,3 +2,7 @@ bitwarden-cli
 vscode
 dbeaver
 bruno
+gpg4win
+gnupg
+rpi-imager
+nmap
