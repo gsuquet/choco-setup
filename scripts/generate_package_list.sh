@@ -10,6 +10,9 @@ readme=$(cat README.md)
 readmePart1=${readme%%"### List"*}
 readmePart2=${readme#*"### List"}
 
+# Split the second part again at the first occurrence of a blank line
+readmePart2=${readmePart2#*$'\n\n'}
+
 # Start the table with headers
 table="| File | Package Name |\n| --- | --- |\n"
 
@@ -21,7 +24,7 @@ for file in $packageDir/*.txt; do
     while IFS= read -r line; do
         # Add a row to the table for each package
         table+="| \`$baseName\` | [$line](https://community.chocolatey.org/packages/$line) |\n"
-    done < "$file"
+    done < <(cat "$file"; echo)
 done
 
 # Combine the README parts and the new table
