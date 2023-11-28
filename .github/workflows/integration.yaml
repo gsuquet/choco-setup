@@ -19,4 +19,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Run Update Package List Script
-        run: ./scripts/generate_package_list.sh
+        run: |
+          chmod +x ./scripts/generate_package_list.sh
+          ./scripts/generate_package_list.sh
