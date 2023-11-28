@@ -18,6 +18,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
       - name: Run Update Package List Script
         run: |
           chmod +x ./scripts/generate_package_list.sh
@@ -25,8 +28,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --local user.email "action@github.com"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "GitHub Action"
           git add README.md
           git commit -m ":memo: doc: Update package list in README"
-          git push
+          git push origin ${{ github.head_ref }}
