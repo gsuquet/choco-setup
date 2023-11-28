@@ -20,5 +20,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Run Update Package List Script
         run: |
-          chmod +x ./scripts/generate-package-list.sh
-          ./scripts/generate-package-list.sh
+          chmod +x ./.scripts/generate-package-list.sh
+          ./.scripts/generate-package-list.sh
