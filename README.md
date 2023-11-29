@@ -45,5 +45,5 @@ install-packages.ps1
 | `tools` | [obsidian](https://community.chocolatey.org/packages/obsidian) |
 | `web` | [brave](https://community.chocolatey.org/packages/brave) |
 | `web` | [firefox](https://community.chocolatey.org/packages/firefox) |
-
+<!-- PACKAGE LIST TABLE END -->
 
