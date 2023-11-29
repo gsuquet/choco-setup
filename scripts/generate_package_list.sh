@@ -3,6 +3,9 @@
 # Define the directory
 packageDir="packages"
 
+# Delete the old table from the README
+sed -i '/| File | Package Name |/,/<!-- PACKAGE LIST TABLE END -->/d' README.md
+
 # Read the README file
 readme=$(cat README.md)
 
@@ -27,8 +30,13 @@ for file in $packageDir/*.txt; do
     done < <(cat "$file"; echo)
 done
 
+# Add a marker to the end of the table
+table+="<!-- PACKAGE LIST TABLE END -->"
+
 # Combine the README parts and the new table
-newReadme="$readmePart1### List\n$table\n"
+newReadme="$readmePart1### List\n$table\n$readmePart2"
+
+
 
 # Write the new content to the README file
 echo -e "$newReadme" > README.md
