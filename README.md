@@ -10,6 +10,8 @@ install-choco.ps1
 ```powershell
 install-packages.ps1
 ```
+
+<!-- PACKAGE LIST TABLE START -->
 ### List
 | File | Package Name |
 | --- | --- |

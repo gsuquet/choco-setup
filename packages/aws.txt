@@ -1,2 +1,4 @@
 awscli
+awssamcli
 eksctl
+saml2aws
