@@ -10,11 +10,15 @@ install-choco.ps1
 ```powershell
 install-packages.ps1
 ```
+
+<!-- PACKAGE LIST TABLE START -->
 ### List
 | File | Package Name |
 | --- | --- |
 | `aws` | [awscli](https://community.chocolatey.org/packages/awscli) |
+| `aws` | [awssamcli](https://community.chocolatey.org/packages/awssamcli) |
 | `aws` | [eksctl](https://community.chocolatey.org/packages/eksctl) |
+| `aws` | [saml2aws](https://community.chocolatey.org/packages/saml2aws) |
 | `containers` | [docker-engine](https://community.chocolatey.org/packages/docker-engine) |
 | `containers` | [docker-desktop](https://community.chocolatey.org/packages/docker-desktop) |
 | `containers` | [docker-compose](https://community.chocolatey.org/packages/docker-compose) |
