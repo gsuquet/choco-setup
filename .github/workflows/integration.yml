@@ -4,42 +4,19 @@ on:
     branches:
       - main
 
-permissions: read-all
+permissions: {}
 
 jobs:
   triage:
     permissions:
-      actions: read
-      checks: read
-      contents: write
-      deployments: read
-      id-token: write
-      issues: read
-      discussions: read
-      packages: read
-      pages: read
+      contents: read
       pull-requests: write
-      repository-projects: read
-      security-events: read
-      statuses: read
-    uses: gsuquet/workflows/.github/workflows/automation-labeler.yml@55560682dc739645e48780690e5c8bfd8500cacb
+    uses: gsuquet/workflows/.github/workflows/automation-labeler.yml@aebb532da1ae58102592b7fc24c073be101326e6
 
   update-package-list:
     permissions:
-      actions: read
-      checks: read
       contents: write
-      deployments: read
-      id-token: write
-      issues: read
-      discussions: read
-      packages: read
-      pages: read
-      pull-requests: read
-      repository-projects: read
-      security-events: read
-      statuses: read
-    uses: gsuquet/workflows/.github/workflows/integration-modification-script.yml@55560682dc739645e48780690e5c8bfd8500cacb
+    uses: gsuquet/workflows/.github/workflows/integration-modification-script.yml@aebb532da1ae58102592b7fc24c073be101326e6
     with:
       script_path: ./scripts/generate_package_list.sh
       ref: ${{ github.head_ref }}
