@@ -1,4 +1,14 @@
 # My Chocolatey Setup
+<p align="center">
+  <a href="https://github.com/gsuquet/choco-setup/blob/main/LICENSE" target="_blank" alt="License">
+    <img src="https://img.shields.io/github/license/gsuquet/choco-setup" alt="License">
+  </a>
+  <a href="https://securityscorecards.dev/viewer/?uri=github.com/gsuquet/choco-setup" alt="openssf scorecard"> 
+    <img src="https://api.securityscorecards.dev/projects/github.com/gsuquet/choco-setup/badge" alt="openssf score"/> 
+  </a>
+</p>
+
+This is my personal Chocolatey setup. It includes a script to install Chocolatey and a script to install all the packages I use.
 
 ## Chocolatey Installation
 ```powershell

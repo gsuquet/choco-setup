@@ -1,0 +1,29 @@
+name: Security
+on:
+  branch_protection_rule:
+  push:
+    branches:
+      - main
+
+permissions: read-all
+
+jobs:
+  ossf-scorecard:
+    permissions:
+      actions: read
+      checks: read
+      contents: read
+      deployments: read
+      id-token: write
+      issues: read
+      discussions: read
+      packages: read
+      pages: read
+      pull-requests: read
+      repository-projects: read
+      security-events: write
+      statuses: read
+    uses: gsuquet/workflows/.github/workflows/security-ossf-scorecard.yml@55560682dc739645e48780690e5c8bfd8500cacb
+    with:
+      harden_runner: true
+      scorecard_token: ${{ secrets.SCORECARD_TOKEN }}
