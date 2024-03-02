@@ -1,0 +1,46 @@
+name: CI
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions: read-all
+
+jobs:
+  triage:
+    permissions:
+      actions: read
+      checks: read
+      contents: write
+      deployments: read
+      id-token: write
+      issues: read
+      discussions: read
+      packages: read
+      pages: read
+      pull-requests: write
+      repository-projects: read
+      security-events: read
+      statuses: read
+    uses: gsuquet/workflows/.github/workflows/automation-labeler.yml@55560682dc739645e48780690e5c8bfd8500cacb
+
+  update-package-list:
+    permissions:
+      actions: read
+      checks: read
+      contents: write
+      deployments: read
+      id-token: write
+      issues: read
+      discussions: read
+      packages: read
+      pages: read
+      pull-requests: read
+      repository-projects: read
+      security-events: read
+      statuses: read
+    uses: gsuquet/workflows/.github/workflows/integration-modification-script.yml@55560682dc739645e48780690e5c8bfd8500cacb
+    with:
+      script_path: ./scripts/generate_package_list.sh
+      ref: ${{ github.head_ref }}
+      commit_message: ':memo: doc: Update package list in README.md'
