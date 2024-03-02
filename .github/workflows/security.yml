@@ -26,4 +26,5 @@ jobs:
     uses: gsuquet/workflows/.github/workflows/security-ossf-scorecard.yml@55560682dc739645e48780690e5c8bfd8500cacb
     with:
       harden_runner: true
+    secrets:
       scorecard_token: ${{ secrets.SCORECARD_TOKEN }}
