@@ -14,7 +14,7 @@ jobs:
       contents: read
       security-events: write
       id-token: write
-    uses: gsuquet/workflows/.github/workflows/security-ossf-scorecard.yml@aebb532da1ae58102592b7fc24c073be101326e6
+    uses: gsuquet/workflows/.github/workflows/security-ossf-scorecard.yml@9b80814be2a66701d400ba9b2780a7b0217d542d
     with:
       harden_runner: true
     secrets:
