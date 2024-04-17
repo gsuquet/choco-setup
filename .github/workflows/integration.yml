@@ -11,12 +11,12 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    uses: gsuquet/workflows/.github/workflows/automation-labeler.yml@aebb532da1ae58102592b7fc24c073be101326e6
+    uses: gsuquet/workflows/.github/workflows/automation-labeler.yml@9b80814be2a66701d400ba9b2780a7b0217d542d
 
   update-package-list:
     permissions:
       contents: write
-    uses: gsuquet/workflows/.github/workflows/integration-modification-script.yml@aebb532da1ae58102592b7fc24c073be101326e6
+    uses: gsuquet/workflows/.github/workflows/integration-modification-script.yml@9b80814be2a66701d400ba9b2780a7b0217d542d
     with:
       script_path: ./scripts/generate_package_list.sh
       ref: ${{ github.head_ref }}
